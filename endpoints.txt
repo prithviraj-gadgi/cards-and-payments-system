@@ -1,0 +1,47 @@
+1. POST : http://localhost:8010/dojo-customer-apis/customer/create - (Create new customer)
+          {
+            "name" : "Prithvi",
+            "age": 22,
+            "email": "Prithvi@email.com",
+            "address": "Prithvi Home Address",
+            "phone": "9876543210",
+            "password": "Prithvi@email.com"
+          }
+
+2. POST : http://localhost:8010/dojo-customer-apis/customer/login  - (Login using customerId and password)
+		  {
+			"customerId" : "pribe9b70a",
+			"password" : "Prithvi@email.com"
+		  }
+
+3. PUT : http://localhost:8010/dojo-customer-apis/customer/{customerId}/update - (Update existing customer)
+          {
+            "name" : "Prithviraj",
+            "age": 22,
+            "email": "Prithviraj@email.com",
+            "address": "Prithviraj Home Address",
+            "phone": "9632029678",
+            "password": "Prithviraj@email.com"
+          }
+
+4. POST : http://localhost:8010/cards-api/card/{customerId}/add - (Add new card)
+          {
+            "cardNumber" : "1234567890123456",
+            "cardType" : "Master Card",
+            "expirationDate" : "09/26/2022"
+          }
+
+5. PUT : http://localhost:8010/cards-api/card/{cardNumber}/update - (Update existing card)
+          {
+            "cardType" : "Visa",
+            "expirationDate" : "09/26/2022"
+          }
+
+6. POST : http://localhost:8010/payment-api/payment/makepayment - (Make payment)
+          {
+            "cardNumber" : "1234567890123456",
+            "cardType" : "Visa",
+            "expirationDate" : "09/26/2022",
+            "customerId" : "pri141b58f",
+            "amount" : "2000"
+          }
